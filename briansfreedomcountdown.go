@@ -26,7 +26,7 @@ func main() {
 			break
 		}
 
-		fmt.Printf("Days: %d Hours: %d Minutes: %d Seconds: %d until %s's Free\n", timeRemaining.d, timeRemaining.h, timeRemaining.m, timeRemaining.s, *name)
+		fmt.Printf("\rDays: %d Hours: %d Minutes: %d Seconds: %d until %s's Free", timeRemaining.d, timeRemaining.h, timeRemaining.m, timeRemaining.s, *name)
 	}
 }
 
