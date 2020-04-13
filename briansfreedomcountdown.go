@@ -22,7 +22,7 @@ func main() {
 		timeRemaining := getTimeRemaining(v)
 
 		if timeRemaining.t <= 0 {
-			fmt.Println("%s's Free!", *name)
+			fmt.Printf("%s's Free!", *name)
 			break
 		}
 
