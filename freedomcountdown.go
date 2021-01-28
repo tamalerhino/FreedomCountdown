@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	deadline := flag.String("deadline", "2020-05-01T00:00:00+01:00", "The deadline for the countdown timer in RFC3339 format (e.g. 2019-12-25T15:00:00+01:00)")
-	name := flag.String("name", "Brian", "The person getting free")
+	deadline := flag.String("deadline", "2021-03-15T00:00:00-05:00", "The deadline for the countdown timer in RFC3339 format (e.g. 2019-12-25T15:00:00+01:00)")
+	name := flag.String("name", "Ulises", "The person getting free")
 	flag.Parse()
 
 	v, err := time.Parse(time.RFC3339, *deadline)
