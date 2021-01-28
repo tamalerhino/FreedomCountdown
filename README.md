@@ -1,4 +1,4 @@
-# Briansfreedomcounter
+# Freedom Countdown
 
 A countdown to freedom.
 
