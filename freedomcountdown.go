@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	deadline := flag.String("deadline", "2021-03-15T00:00:00-05:00", "The deadline for the countdown timer in RFC3339 format (e.g. 2019-12-25T15:00:00+01:00)")
+	deadline := flag.String("deadline", "2021-03-01T00:00:00-05:00", "The deadline for the countdown timer in RFC3339 format (e.g. 2019-12-25T15:00:00+01:00)")
 	name := flag.String("name", "Ulises", "The person getting free")
 	flag.Parse()
 
@@ -26,7 +26,7 @@ func main() {
 			break
 		}
 
-		fmt.Printf("\rDays: %d Hours: %d Minutes: %d Seconds: %d until %s's Free", timeRemaining.d, timeRemaining.h, timeRemaining.m, timeRemaining.s, *name)
+		fmt.Printf("\r%d Days, %d Hours, %d Minutes, and %d Seconds until %s's Free", timeRemaining.d, timeRemaining.h, timeRemaining.m, timeRemaining.s, *name)
 	}
 }
 
